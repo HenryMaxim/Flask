@@ -14,7 +14,7 @@ echo "COPY ./static /home/myapp/static/" >> tempdir/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >> tempdir/Dockerfile
 echo "COPY flask_app.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 8008" >>  tempdir/Dockerfile
-echo "CMD python /home/myapp/sample_app.py" >> tempdir/Dockerfile
+echo "CMD python /home/myapp/flask_app.py" >> tempdir/Dockerfile
 
 cd tempdir
 docker build -t sampleapp .
