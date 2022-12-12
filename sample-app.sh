@@ -12,7 +12,7 @@ echo "FROM python" > tempdir/Dockerfile
 echo "Run pip install flask" >> tempdir/Dockerfile
 echo "COPY ./static /home/myapp/static/" >> tempdir/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >> tempdir/Dockerfile
-echo "COPY sample_app.py /home/myapp/" >> tempdir/Dockerfile
+echo "COPY flask_app.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 8008" >>  tempdir/Dockerfile
 echo "CMD python /home/myapp/sample_app.py" >> tempdir/Dockerfile
 
