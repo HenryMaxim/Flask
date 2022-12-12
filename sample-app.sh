@@ -18,5 +18,5 @@ echo "CMD python /home/myapp/flask_app.py" >> tempdir/Dockerfile
 
 cd tempdir
 docker build -t sampleapp .
-docker run -t -d -p 5099:8008 --name samplerunning sampleapp
+docker run -t -d -p 8008:8008 --name samplerunning sampleapp
 docker container ls -a
